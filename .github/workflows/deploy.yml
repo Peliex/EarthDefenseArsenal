@@ -25,7 +25,9 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: build
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages  # pushes to the gh-pages branch
+        folder: build     # or the folder where your build outputs the files, e.g., 'public' or 'dist'
+        clean: true       # Optional: Cleans the deployment branch automatically before deploying
