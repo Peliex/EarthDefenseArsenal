@@ -2,8 +2,8 @@ export const missions = [
     {
         number: 1,
         name: "Base 251✝✝✝✝✝",
-        minimumLevel: [-1, -1, -1, -1],
-        maximumLevel: [-1, -1, -1, -1]
+        minimumLevel: null,
+        maximumLevel: null
     },
     {
         number: 2,

@@ -194,8 +194,60 @@ export const weapons = [
             {
                 name: "Maximum",
                 stars: 9,
-                charge: 3.0,
+                charge: 2.0,
                 damage: 611.5,
+                range: 144.9
+            }
+        ]
+    },
+    {
+        name: "Vibro Hammer FV",
+        type: "CC Striker",
+        level: 35,
+        stars: 10,
+
+        stats: [
+            {
+                name: "Charge Speed",
+                stars: 10,
+                value: 1.9
+            },
+            {
+                name: "Defense Damage",
+                value: 50.0
+            },
+            {
+                name: "Capacity",
+                stars: 5,
+                value: 4
+            },
+            {
+                name: "Reload",
+                stars: 5,
+                value: 6.0
+            }
+        ],
+
+        attacks: [
+            {
+                name: "Regular Attack",
+                stars: 9,
+                charge: 0.0,
+                damage: 269.1,
+                range: 48.3
+            },
+            {
+                name: "High Voltage",
+                stars: 9,
+                charge: 1.0,
+                damage: 611.5,
+                range: 144.9
+            },
+            {
+                name: "Maximum",
+                stars: 9,
+                charge: 3.0,
+                damage: 815.4,
                 range: 144.9
             }
         ]

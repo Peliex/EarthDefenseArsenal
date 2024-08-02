@@ -41,10 +41,14 @@
             <tr>
                 <td class="td-number">{mission.number}</td>
                 <td>{mission.name}</td>
-                <td style="text-align: center" class="td-difficulty-normal" on:click={() => selectDifficulty(mission, 'Normal', 0)}>{mission.minimumLevel[0]} - {mission.maximumLevel[0]}</td>
-                <td style="text-align: center" class="td-difficulty-hard" on:click={() => selectDifficulty(mission, 'Hard', 1)}>{mission.minimumLevel[1]} - {mission.maximumLevel[1]}</td>
-                <td style="text-align: center" class="td-difficulty-hardest" on:click={() => selectDifficulty(mission, 'Hardest', 2)}>{mission.minimumLevel[2]} - {mission.maximumLevel[2]}</td>
-                <td style="text-align: center" class="td-difficulty-inferno" on:click={() => selectDifficulty(mission, 'Inferno', 3)}>{mission.minimumLevel[3]} - {mission.maximumLevel[3]}</td>
+                {#if mission.minimumLevel}
+                    <td style="text-align: center" class="td-difficulty-normal" on:click={() => selectDifficulty(mission, 'Normal', 0)}>{mission.minimumLevel[0]} - {mission.maximumLevel[0]}</td>
+                    <td style="text-align: center" class="td-difficulty-hard" on:click={() => selectDifficulty(mission, 'Hard', 1)}>{mission.minimumLevel[1]} - {mission.maximumLevel[1]}</td>
+                    <td style="text-align: center" class="td-difficulty-hardest" on:click={() => selectDifficulty(mission, 'Hardest', 2)}>{mission.minimumLevel[2]} - {mission.maximumLevel[2]}</td>
+                    <td style="text-align: center" class="td-difficulty-inferno" on:click={() => selectDifficulty(mission, 'Inferno', 3)}>{mission.minimumLevel[3]} - {mission.maximumLevel[3]}</td>
+                {:else}
+                    <td style="background-color: black;" class="td-difficulty-normal" colspan=4 />
+                {/if}
             </tr>
         {/each}
     </tbody>
