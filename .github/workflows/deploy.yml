@@ -1,33 +1,74 @@
-name: Deploy to GitHub Pages
-
+name: Build, Process, and Deploy
 on:
   push:
     branches:
-      - main
+      - main  # Adjust to your active development branch
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+    contents: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout the code
+    - name: Checkout Repository
       uses: actions/checkout@v2
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'
+        node-version: '20'  # Adjust to your Node.js version
 
-    - name: Install dependencies
+    - name: Install Dependencies
       run: npm install
 
-    - name: Build the project
-      run: npm run build
+    - name: Build Application
+      run: npm run build  # Your build command here
+
+    - name: Save Build Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: built-app
+        path: build  # Adjust to match your build output directory
+
+  process:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: built-app
+        path: build
+
+    - name: Run Processing Scripts
+      run: echo "Processing build artifacts"  # Replace with your processing commands
+
+    - name: Save Processed Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: processed-app
+        path: build
+
+  deploy:
+    needs: process
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Download Processed Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: processed-app
+        path: build
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages  # pushes to the gh-pages branch
-        folder: build     # or the folder where your build outputs the files, e.g., 'public' or 'dist'
-        clean: true       # Optional: Cleans the deployment branch automatically before deploying
+        folder: build
+        branch: gh-pages
