@@ -154,5 +154,65 @@ export const missions = [
         name: "Castaway",
         minimumLevel: [0, 4, 32, 34],
         maximumLevel: [5, 13, 41, 60]
+    },
+    {
+        number: 27,
+        name: "Red Machine",
+        minimumLevel: [0, 4, 33, 34],
+        maximumLevel: [5, 13, 42, 61]
+    },
+    {
+        number: 28,
+        name: "Death Dash",
+        minimumLevel: [0, 5, 33, 34],
+        maximumLevel: [5, 13, 42, 61]
+    },
+    {
+        number: 29,
+        name: "Grenadier",
+        minimumLevel: [0, 5, 33, 34],
+        maximumLevel: [5, 13, 42, 62]
+    },
+    {
+        number: 30,
+        name: "Second Giant Ship Destruction Operation",
+        minimumLevel: [0, 6, 33, 35],
+        maximumLevel: [5, 13, 43, 62]
+    },
+    {
+        number: 31,
+        name: "Mother's Realm",
+        minimumLevel: [0, 6, 34, 35],
+        maximumLevel: [5, 13, 43, 62]
+    },
+    {
+        number: 32,
+        name: "Secrets of the Hot Springs",
+        minimumLevel: [0, 6, 34, 36],
+        maximumLevel: [6, 14, 43, 62]
+    },
+    {
+        number: 33,
+        name: "Winged Legion",
+        minimumLevel: [0, 7, 35, 36],
+        maximumLevel: [6, 14, 43, 63]
+    },
+    {
+        number: 34,
+        name: "Seaside Tower",
+        minimumLevel: [0, 7, 35, 36],
+        maximumLevel: [6, 15, 43, 64]
+    },
+    {
+        number: 35,
+        name: "Crumbling City",
+        minimumLevel: [0, 7, 35, 37],
+        maximumLevel: [7, 15, 43, 64]
+    },
+    {
+        number: 36,
+        name: "The Final Stand",
+        minimumLevel: [1, 7, 35, 37],
+        maximumLevel: [7, 16, 44, 64]
     }
 ];

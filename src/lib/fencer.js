@@ -246,7 +246,7 @@ export const weapons = [
             {
                 name: "Maximum",
                 stars: 9,
-                charge: 3.0,
+                charge: 2.0,
                 damage: 815.4,
                 range: 144.9
             }
