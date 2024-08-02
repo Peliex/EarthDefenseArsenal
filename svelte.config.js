@@ -8,9 +8,11 @@ const config = {
     preprocess: vitePreprocess(),
 
     kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			fallback: '200.html'
+		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? 'Peliex/EDA' :'',
+			base: process.env.NODE_ENV === 'production' ? '/EDA' :'',
 		}
     }
 };
