@@ -1,21 +1,20 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
     import { missions } from '../../lib/missions.js';
     import { weapons as Fencer } from '../../lib/fencer.js'
 
-    let selectedMission = null;
-    let selectedDifficulty = null;
-    let filteredWeapons = [];
+    const dispatch = createEventDispatcher();
 
     function selectDifficulty(mission, difficulty, index)
-    {
-        selectedMission = mission;
-        selectedDifficulty = difficulty;
+    {   
         const minLevel = mission.minimumLevel[index];
         const maxLevel = mission.maximumLevel[index];
 
-        filteredWeapons = Fencer.filter(weapon => 
+        const filteredWeapons = Fencer.filter(weapon => 
             weapon.level >= minLevel && weapon.level <= maxLevel
         );
+        console.log(`${mission.name}, ${difficulty}`)
+        dispatch('select', {mission, difficulty, filteredWeapons});
     }
 </script>
 
@@ -53,37 +52,6 @@
         {/each}
     </tbody>
 </table>
-
-{#if selectedMission && selectedDifficulty}
-    <div>
-        <h2>Weapons available on {selectedMission.name} ({selectedDifficulty} Difficulty)</h2>
-        <div class="weapon-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan=4><h3>Fencer</h3></th>
-                    </tr>
-                    <tr>
-                        <th>Weapon Name</th>
-                        <th>Level</th>
-                        <th>Stars</th>
-                        <th>Weapon Type</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {#each filteredWeapons as weapon}
-                        <tr>
-                            <td>{weapon.name}</td>
-                            <td>{weapon.level}</td>
-                            <td>{weapon.stars}</td>
-                            <td>{weapon.type}</td>
-                        </tr>
-                    {/each}
-                </tbody>
-            </table>
-        </div>
-    </div>
-{/if}
 
 <style>
     table
