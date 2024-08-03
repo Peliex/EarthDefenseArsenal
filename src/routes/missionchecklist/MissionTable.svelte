@@ -1,3 +1,13 @@
+<!--
+@component
+
+- Renders a table containing all missions from EDF 6
+
+@example
+```svelte
+<MissionTable on:select={selectFunctionHandler} />
+```
+-->
 <script>
     import { createEventDispatcher } from 'svelte';
     import { missions } from '../../lib/missions.js';

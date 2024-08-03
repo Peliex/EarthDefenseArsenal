@@ -61,19 +61,19 @@ export const missions = [
     },
     {
         number: 11,
-        name: "Mechanical Man",
+        name: "Machine Men",
         minimumLevel: [0, 0, 28, 28],
         maximumLevel: [2, 7, 37, 55]
     },
     {
         number: 12,
-        name: "Mechanical Giant",
+        name: "The Colossal Machines",
         minimumLevel: [0, 0, 28, 29],
         maximumLevel: [3, 8, 37, 56]
     },
     {
         number: 13,
-        name: "The Day in Question✝✝✝✝✝",
+        name: "The Big Day✝✝✝✝✝",
         minimumLevel: [0, 0, 28, 29],
         maximumLevel: [3, 8, 37, 56]
     },
@@ -85,25 +85,25 @@ export const missions = [
     },
     {
         number: 15,
-        name: "Removal",
+        name: "Extermination",
         minimumLevel: [0, 1, 29, 30],
         maximumLevel: [3, 9, 38, 56]
     },
     {
         number: 16,
-        name: "β-type Diffusion",
+        name: "Beta Spread",
         minimumLevel: [0, 1, 29, 30],
         maximumLevel: [3, 9, 38, 57]
     },
     {
         number: 17,
-        name: "Drone Attack",
+        name: "Drone Invasion",
         minimumLevel: [0, 1, 30, 30],
         maximumLevel: [3, 10, 38, 57]
     },
     {
         number: 18,
-        name: "Giant Ship Destruction Operation",
+        name: "Crash the Ship",
         minimumLevel: [0, 2, 30, 31],
         maximumLevel: [3, 10, 39, 58]
     },
@@ -115,25 +115,25 @@ export const missions = [
     },
     {
         number: 20,
-        name: "Battle at the Pier",
+        name: "Melee at the Pier",
         minimumLevel: [0, 2, 31, 32],
         maximumLevel: [4, 11, 40, 58]
     },
     {
         number: 21,
-        name: "Silver Fleet",
+        name: "The Silver Fleet",
         minimumLevel: [0, 3, 31, 32],
         maximumLevel: [4, 11, 40, 58]
     },
     {
         number: 22,
-        name: "Third Machine",
+        name: "The Third Machine",
         minimumLevel: [0, 3, 31, 32],
         maximumLevel: [4, 11, 40, 59]
     },
     {
         number: 23,
-        name: "Dropship Arrives",
+        name: "Arrival of the Dropships",
         minimumLevel: [0, 3, 31, 33],
         maximumLevel: [4, 12, 40, 59]
     },
@@ -145,73 +145,73 @@ export const missions = [
     },
     {
         number: 25,
-        name: "Sniper Squad",
+        name: "Sniper Unit",
         minimumLevel: [0, 4, 32, 33],
         maximumLevel: [5, 12, 41, 60]
     },
     {
         number: 26,
-        name: "Castaway",
+        name: "Drifters",
         minimumLevel: [0, 4, 32, 34],
         maximumLevel: [5, 13, 41, 60]
     },
     {
         number: 27,
-        name: "Red Machine",
+        name: "The Red Machines",
         minimumLevel: [0, 4, 33, 34],
         maximumLevel: [5, 13, 42, 61]
     },
     {
         number: 28,
-        name: "Death Dash",
+        name: "Death Race",
         minimumLevel: [0, 5, 33, 34],
         maximumLevel: [5, 13, 42, 61]
     },
     {
         number: 29,
-        name: "Grenadier",
+        name: "Grenadiers",
         minimumLevel: [0, 5, 33, 34],
         maximumLevel: [5, 13, 42, 62]
     },
     {
         number: 30,
-        name: "Second Giant Ship Destruction Operation",
+        name: "Crash the Giant Ship...Again!",
         minimumLevel: [0, 6, 33, 35],
         maximumLevel: [5, 13, 43, 62]
     },
     {
         number: 31,
-        name: "Mother's Realm",
+        name: "Mother's Domain",
         minimumLevel: [0, 6, 34, 35],
         maximumLevel: [5, 13, 43, 62]
     },
     {
         number: 32,
-        name: "Secrets of the Hot Springs",
+        name: "Secret of the Hot Springs",
         minimumLevel: [0, 6, 34, 36],
         maximumLevel: [6, 14, 43, 62]
     },
     {
         number: 33,
-        name: "Winged Legion",
+        name: "The Winged Army",
         minimumLevel: [0, 7, 35, 36],
         maximumLevel: [6, 14, 43, 63]
     },
     {
         number: 34,
-        name: "Seaside Tower",
+        name: "Tower by the Shore",
         minimumLevel: [0, 7, 35, 36],
         maximumLevel: [6, 15, 43, 64]
     },
     {
         number: 35,
-        name: "Crumbling City",
+        name: "The Crumbling Town",
         minimumLevel: [0, 7, 35, 37],
         maximumLevel: [7, 15, 43, 64]
     },
     {
         number: 36,
-        name: "The Final Stand",
+        name: "Final Resistance",
         minimumLevel: [1, 7, 35, 37],
         maximumLevel: [7, 16, 44, 64]
     }

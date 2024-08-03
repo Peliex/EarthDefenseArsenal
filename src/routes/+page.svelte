@@ -8,7 +8,6 @@
 
     function handleSelect(event)
     {
-        console.log(`${event.detail.mission.name}`);
         selectedMission = event.detail.mission;
         selectedDifficulty = event.detail.difficulty;
         filteredWeapons = event.detail.filteredWeapons;

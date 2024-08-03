@@ -1,3 +1,13 @@
+<!--
+@component
+
+- Renders tables for each character class based on provided mission and difficulty
+
+@example
+```svelte
+<WeaponTable selectedMission={mission} selectedDifficulty={difficulty} filteredWeapons={filterResult}/>
+```
+-->
 <script>
     export let selectedMission = null;
     export let selectedDifficulty = null;
