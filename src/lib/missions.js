@@ -214,5 +214,89 @@ export const missions = [
         name: "Final Resistance",
         minimumLevel: [1, 7, 35, 37],
         maximumLevel: [7, 16, 44, 64]
+    },
+    {
+        number: 37,
+        name: "Blazing Flames",
+        minimumLevel: [1, 8, 35, 37],
+        maximumLevel: [7, 16, 45, 64]
+    },
+    {
+        number: 38,
+        name: "Base 251✝✝✝✝✝",
+        minimumLevel: [1, 8, 36, 38],
+        maximumLevel: [7, 16, 45, 64]
+    },
+    {
+        number: 39,
+        name: "Standard Mission I",
+        minimumLevel: [1, 8, 36, 38],
+        maximumLevel: [7, 16, 45, 65]
+    },
+    {
+        number: 40,
+        name: "Unchanging Days I",
+        minimumLevel: [2, 9, 36, 38],
+        maximumLevel: [7, 16, 45, 65]
+    },
+    {
+        number: 41,
+        name: "Visitors I",
+        minimumLevel: [2, 9, 36, 39],
+        maximumLevel: [7, 17, 46, 66]
+    },
+    {
+        number: 42,
+        name: "The Next Day I",
+        minimumLevel: [2, 10, 37, 39],
+        maximumLevel: [7, 17, 46, 66]
+    },
+    {
+        number: 43,
+        name: "World Gone Mad",
+        minimumLevel: [2, 10, 37, 40],
+        maximumLevel: [7, 18, 46, 66]
+    },
+    {
+        number: 44,
+        name: "Banquet of the Gods",
+        minimumLevel: [2, 10, 38, 40],
+        maximumLevel: [7, 18, 47, 66]
+    },
+    {
+        number: 45,
+        name: "Tunnel #1",
+        minimumLevel: [2, 11, 38, 40],
+        maximumLevel: [8, 19, 47, 67]
+    },
+    {
+        number: 46,
+        name: "The Big Day✝✝✝✝✝",
+        minimumLevel: [3, 11, 38, 40],
+        maximumLevel: [8, 19, 47, 67]
+    },
+    {
+        number: 47,
+        name: "Turning Point I",
+        minimumLevel: [3, 11, 39, 41],
+        maximumLevel: [9, 19, 47, 68]
+    },
+    {
+        number: 48,
+        name: "Extermination I",
+        minimumLevel: [3, 11, 39, 42],
+        maximumLevel: [9, 20, 48, 68]
+    },
+    {
+        number: 49,
+        name: "Aranea's Mountain",
+        minimumLevel: [3, 12, 39, 42],
+        maximumLevel: [9, 20, 48, 68]
+    },
+    {
+        number: 50,
+        name: "The Treacherous Summit",
+        minimumLevel: [3, 12, 40, 42],
+        maximumLevel: [9, 20, 48, 69]
     }
 ];
