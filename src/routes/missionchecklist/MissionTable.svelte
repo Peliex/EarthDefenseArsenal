@@ -34,15 +34,15 @@
             <th style="background-color: black; text-align: center;" colspan="6">EDF 6 Missions</th>
         </tr>
         <tr>
-            <th rowspan="2">Number</th>
+            <th rowspan="2">No.</th>
             <th rowspan="2">Mission Name</th>
             <th style="text-align:center;" colspan="4">Item Level Range</th>
         </tr>
         <tr>
-            <th>Normal</th>
-            <th>Hard</th>
-            <th>Hardest</th>
-            <th>Inferno</th>
+            <th style="color: lightgreen;">Normal</th>
+            <th style="color: palegoldenrod">Hard</th>
+            <th style="color: lightsalmon">Hardest</th>
+            <th style="color: lightcoral">Inferno</th>
         </tr>
     </thead>
     <tbody>
@@ -68,12 +68,13 @@
     {
         border-collapse: collapse;
         font-family: Arial, Helvetica, sans-serif;
+        text-wrap: nowrap;
     }
 
     th, td
     {
         border: 1px solid black;
-        padding: 8px;
+        padding: 5px;
     }
 
     th
@@ -84,30 +85,35 @@
     .td-number
     {
         background-color: darkslategray;
-        font-size: x-large
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .td-difficulty-normal
     {
         background-color:lightgreen;
         color: darkred;
+        font-size: large;
     }
 
     .td-difficulty-hard
     {
         background-color: palegoldenrod;
         color: darkviolet;
+        font-size: large;
     }
 
     .td-difficulty-hardest
     {
         background-color: lightsalmon;
         color: darkmagenta;
+        font-size: large;
     }
 
     .td-difficulty-inferno
     {
         background-color: lightcoral;
-        color: rgb(0, 49, 0)
+        color: rgb(0, 49, 0);
+        font-size: large;
     }
 </style>
